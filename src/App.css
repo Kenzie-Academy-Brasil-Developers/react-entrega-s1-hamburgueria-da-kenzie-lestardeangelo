@@ -4,12 +4,15 @@
 
 .header_pesquisa{
 
+  display: flex;
   max-width: 1700px;
   height: 139px;
   left: 0px;
   top: 0px;
-
   background: #F5F5F5;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 }
 
@@ -26,21 +29,24 @@
   left: 265px;
   top: 10px;
   
-  /* color-primary */
-  
   background: #27AE60;
-  /* color-primary */
   
   border: 2px solid #27AE60;
   box-sizing: border-box;
   border-radius: 8px;
   
-  /* Inside auto layout */
-  
   flex: none;
   order: 1;
   flex-grow: 0;
   margin: 0px 148px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FFFFFF;
 
 }
 
@@ -53,7 +59,6 @@
   position: absolute;
   width: 247.94px;
   height: 37.83px;
-  left: 32.19px;
   top: -1.72px;
 
 }
@@ -69,7 +74,6 @@
   position: absolute;
   width: 280px;
   height: 60px;
-  left: 18px;
   top: 65px;
 
   background: #FFFFFF;
@@ -132,4 +136,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media(min-width: 375px){
+
+  .div_input_pesquisa{
+    width: 319.91px;
+  }
+
+  .input_pesquisa{
+    width: 319.91px;
+  }
+
+  .btn_pesquisa{
+    margin: 0px 185px;
+  }
+
+}
+
+@media(min-width: 425px){
+  .div_input_pesquisa{
+    width: 387.91px;
+  }
+
+  .input_pesquisa{
+    width: 387.91px;
+
+  }
+
+  .btn_pesquisa{
+    margin: 0px 250px;
+  }
+}
+
+@media(min-width: 768px){
+  .div_input_pesquisa{
+    top: 35px;
+    left: 370px;
+  }
+
+  .img_logo{
+
+    width: 270.94px;
+    height: 26.83px;
+    top: 37.28px;
+    background-size: contain;
+
+  }
+
+  .input_pesquisa{
+    width: 386.91px;
+  }
+
+  .header_pesquisa{
+    align-items: normal
+  }
+}
+
+@media(min-width: 1024px){
+
+  .img_logo{
+    height: 30.83px;
+    top: 36.28px;
+  }
+
+  .div_input_pesquisa{
+    left: 610px;
+  }
+
+}
+
+@media(min-width: 1440px){
+    
+  .img_logo{
+    height: 32.83px;
+    top: 43.28px;
+    left: 18px;
+  }
+
+  .div_input_pesquisa{
+    left: 995px;
+    top: 43.28px;
+  }
+
+}
+
+@media(min-width: 1600px){
+
+  .div_input_pesquisa{
+    left: 1160px;
+  }
+
 }

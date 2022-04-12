@@ -45,3 +45,176 @@
 
     color: #FFFFFF;
 }
+
+.div_info_carrinho_vazio{
+
+}
+
+.h1_info_carrinho{
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 16.67%;
+    bottom: -16.67%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    height: 85%;
+
+}
+
+.p_info_carrinho{
+
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 35%;
+    bottom: -33.33%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #828282;
+    height: 20%;
+
+}
+
+.div_total{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid #E0E0E0;
+
+}
+
+.p_total{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    margin: 10px;
+
+}
+
+.span_preco_total{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px;
+
+    color: #828282;
+
+}
+
+@media(min-width: 375px){
+
+    .header_carrinho{
+        width: 339.91px; 
+    }
+
+    .div_carrinho{
+        width: 319.91px;
+    }
+
+}
+
+@media(min-width: 425px){
+
+    .header_carrinho{
+        width: 387.91px;
+    }
+
+    .div_carrinho{
+        width: 367.91px;
+    }
+
+    .h1_titulo_carrinho{
+        left: -44%;
+        top: 12.67%;
+    }
+
+}
+
+@media(min-width: 768px){
+    .header_carrinho{
+        width: 236px;
+        height: 60px;
+        left: 513px;
+        top: 155px;
+
+    }
+
+    .h1_titulo_carrinho{
+        left: -3%;
+    }
+
+    .div_carrinho{
+        width: 217px;
+        height: 230px;
+        left: 513px;
+        top: 215px;
+    }
+}
+
+@media(min-width: 1024px){
+
+    .header_carrinho{
+        left: 770px;
+    }
+
+    .div_carrinho{
+        left: 769px;
+    }
+
+}
+
+@media(min-width: 1440px){
+
+    .header_carrinho{
+        left: 1000px;
+        width: 385px;
+    }
+
+    .div_carrinho{
+        left: 1000px;
+        width: 365px;
+        height: 158px;
+    }
+
+    .h1_titulo_carrinho{
+        left: -40%;
+    }
+}
+
+@media(min-width: 1600px){
+
+    .div_carrinho{
+        left: 1160px;
+
+    }
+
+    .header_carrinho{
+
+        left: 1160px;
+    }
+
+}
+

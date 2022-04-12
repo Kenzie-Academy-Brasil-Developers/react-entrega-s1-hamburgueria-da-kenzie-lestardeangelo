@@ -1,3 +1,30 @@
-.div_produtos{
+@media(min-width: 768px){
+
+    .div_produtos{
+        width: 500px;;
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    .div_produtos{
+        width: 760px;
+    }
+
+}
+
+@media(min-width: 1440px){
     
+    .div_produtos{
+        width: 970px;
+    }
+}
+
+@media(min-width: 1600px){
+
+    .div_produtos{
+        margin-left: 25px;
+        width: 1000px;
+    }
 }

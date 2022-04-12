@@ -9,7 +9,7 @@ export default function Product({handleClick, currentSale, products}){
                 <img className="img_produto" src={item.img} alt={item.name}/>
                 <h1 className="h1_nome_produto">{item.name}</h1>
                 <p className="p_categoria_produto">{item.category}</p>
-                <span className="span_preco_produto">{item.price}</span>
+                <span className="span_preco_produto">{item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
                 <button className="btn_add_produto" onClick={() => handleClick(item.id)}>Adicionar</button>
             </li>))}
             
