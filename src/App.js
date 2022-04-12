@@ -10,6 +10,7 @@ function App() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([])
+  const [filterPesquisa, setFilterPesquisa] = useState([])
   const [cartTotal, setCartTotal] = useState(0)
 
   useEffect(() =>{
@@ -26,9 +27,11 @@ function App() {
   function showProducts(input){
 
     const filter = products.filter((item) =>(
-      item.name.toLowerCase().includes(input.toLowerCase()) ||
-       item.category.toLowerCase().includes(input.toLowerCase())
-    ))
+
+          item.name.toLowerCase().includes(input.toLowerCase()) ||
+          item.category.toLowerCase().includes(input.toLowerCase())
+        
+      ))
 
     setFilteredProducts(filter)
   }
@@ -37,26 +40,35 @@ function App() {
 
     const findIndex = currentSale.findIndex((item) => productId === item.id)
 
-    const find = currentSale.find(item => productId === item.id)
+    const filter = products.filter((item) => productId === item.id)
 
     if(findIndex === -1){
 
-      setCurrentSale([...currentSale, find])
+      setCurrentSale([...currentSale, ...filter])
     }
    
   }
 
+  function removeItems(productId){
+    
+    const removeItem = currentSale.filter((item) => item.id !== productId)
+
+    setCurrentSale(removeItem)
+
+  }
+  
   return (
+
     <div className="App">
       <header className='header_pesquisa'>
         <p className='img_logo'></p>
         <div className='div_input_pesquisa'>
-          <input className='input_pesquisa'></input>
-          <button className='btn_pesquisa'>Pesquisar</button>
+          <input onChange={(evt) => setFilterPesquisa(evt.target.value)} className='input_pesquisa'></input>
+          <button onClick={() => showProducts(filterPesquisa)} className='btn_pesquisa'>Pesquisar</button>
         </div>
       </header>
-      <ProductsList handleClick={handleClick} currentSale={currentSale} products={products}/>
-      <Cart currentSale={currentSale}/>
+      <ProductsList handleClick={handleClick} currentSale={currentSale} filteredProducts={filteredProducts}/>
+      <Cart currentSale={currentSale} removeItems={removeItems}/>
     </div>
   );
 }

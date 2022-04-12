@@ -46,10 +46,6 @@
     color: #FFFFFF;
 }
 
-.div_info_carrinho_vazio{
-
-}
-
 .h1_info_carrinho{
 
     position: absolute;
@@ -124,6 +120,111 @@
 
 }
 
+.ul_produto_carrinho{
+
+    overflow-x: scroll;
+    top: -16px;
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+    left: 0px;
+    height: 75%;
+
+}
+
+.li_produto_carrinho{
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 95%;
+    margin-left: 5px;
+ 
+}
+
+.img_produto_carrinho{
+
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 0%;
+    right: 76.68%;
+    top: 0%;
+    bottom: 0%;
+
+    /* grey-100 */
+
+    background: #E0E0E0;
+    border-radius: 5px;
+
+}
+
+.h1_nome_produto_carrinho{
+
+    height: 20px;
+    margin: 1px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #333333;
+}
+
+.p_categoria_produto_carrinho{
+
+    height: 20px;
+    margin: 1px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #828282;
+
+}
+
+.btn_add_produto_carrinho{
+
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    border-color: transparent;
+    background: #F5F5F5;
+    top: -25px;
+
+}
+
+.div_container_carrinho{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.div_info_produto_carrinho{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    left: -5px;
+    height: 73px;
+    width: 100px;
+    text-align: left;
+
+}
+
 @media(min-width: 375px){
 
     .header_carrinho{
@@ -172,6 +273,10 @@
         left: 513px;
         top: 215px;
     }
+
+    .div_info_produto_carrinho{
+        width: 65px;
+    }
 }
 
 @media(min-width: 1024px){
@@ -196,7 +301,8 @@
     .div_carrinho{
         left: 1000px;
         width: 365px;
-        height: 158px;
+        height: 235px;
+        top: 216px;
     }
 
     .h1_titulo_carrinho{
@@ -208,6 +314,7 @@
 
     .div_carrinho{
         left: 1160px;
+        top: 216px;
 
     }
 

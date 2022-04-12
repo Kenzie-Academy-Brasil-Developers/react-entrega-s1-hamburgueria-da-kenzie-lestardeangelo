@@ -1,11 +1,11 @@
 import "./styles.css"
 
-export default function Product({handleClick, currentSale, products}){
+export default function Product({handleClick, filteredProducts}){
 
     return(
 
         <ul className="ul_produto">
-            {products.map(item =>(<li className="li_produto" key={item.id}>
+            {filteredProducts.map(item =>(<li className="li_produto" key={item.id}>
                 <img className="img_produto" src={item.img} alt={item.name}/>
                 <h1 className="h1_nome_produto">{item.name}</h1>
                 <p className="p_categoria_produto">{item.category}</p>
