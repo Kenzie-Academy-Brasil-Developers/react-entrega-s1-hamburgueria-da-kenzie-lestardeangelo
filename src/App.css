@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.header_pesquisa{
+
+  max-width: 1700px;
+  height: 139px;
+  left: 0px;
+  top: 0px;
+
+  background: #F5F5F5;
+
+}
+
+.btn_pesquisa{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  
+  position: static;
+  width: 107px;
+  height: 40px;
+  left: 265px;
+  top: 10px;
+  
+  /* color-primary */
+  
+  background: #27AE60;
+  /* color-primary */
+  
+  border: 2px solid #27AE60;
+  box-sizing: border-box;
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 148px;
+
+}
+
+.img_logo{
+
+  background-image: url(./Mask\ Group.svg); 
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  position: absolute;
+  width: 247.94px;
+  height: 37.83px;
+  left: 32.19px;
+  top: -1.72px;
+
+}
+
+.div_input_pesquisa{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 15px;
+
+  position: absolute;
+  width: 280px;
+  height: 60px;
+  left: 18px;
+  top: 65px;
+
+  background: #FFFFFF;
+  /* grey-100 */
+
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  
+}
+
+.input_pesquisa{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 15px;
+
+  position: absolute;
+  width: 280px;
+  height: 60px;
+  left: -3px;
+
+
+  background: transparent;
+
+  border: transparent;
+
+  box-sizing: border-box;
+  border-radius: 8px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

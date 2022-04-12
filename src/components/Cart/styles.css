@@ -1,0 +1,47 @@
+.div_carrinho{
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    position: absolute;
+    width: 259.91px;
+    height: 260px;
+    left: 18px;
+    top: 610px;
+    background: #F5F5F5;
+    border-radius: 0px 0px 5px 5px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+.header_carrinho{
+
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    left: 18px;
+    top: 550px;
+
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.h1_titulo_carrinho{
+    position: absolute;
+    left: -25%;
+    right: 0%;
+    top: 16.67%;
+    bottom: -16.67%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+
+    color: #FFFFFF;
+}
